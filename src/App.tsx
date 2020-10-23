@@ -1,13 +1,15 @@
 import React from 'react';
 
+import Page from './components/Page';
+
 import { GlobalStyle } from './styles/GlobalStyles';
 
 function App() {
   return (
     <>
-      <h1>
+      <Page>
         Bom dia porra
-      </h1>
+      </Page>
 
       <GlobalStyle />
     </>
