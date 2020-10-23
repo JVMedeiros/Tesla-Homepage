@@ -1,11 +1,26 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, Heading, Buttons } from './styles';
 
-const DefaultOverlayContent: React.FC = () => {
+interface Props {
+  label: string,
+  description: StringConstructor
+}
+
+const DefaultOverlayContent: React.FC<Props> = ({
+  label, description
+}) => {
   return (
     <Container>
-      <h1>DefaultOverlayContent</h1>
+      <Heading>
+        <h1>{label}</h1>
+        <h2>{description}</h2>
+      </Heading>
+
+      <Buttons>
+        <button>Custon Order</button>
+        <button className="white">Existing Inventory</button>
+      </Buttons>
     </Container>
   );
 };
