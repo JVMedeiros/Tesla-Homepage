@@ -4,7 +4,7 @@ import { Container, Heading, Buttons } from './styles';
 
 interface Props {
   label: string,
-  description: StringConstructor
+  description: string
 }
 
 const DefaultOverlayContent: React.FC<Props> = ({
