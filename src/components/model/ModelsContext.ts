@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { ReactNode }  from 'react';
 
-interface CarModel {
+export interface CarModel {
   modelName: string
   overlayNode: ReactNode
   sectionRef: React.RefObject<HTMLElement>
 }
 
 
-interface ModelsContext {
+export interface ModelsContext {
   wrapperRef: React.RefObject<HTMLElement>
   registeredModels: CarModel[]
   registerModel: (model: CarModel) => void
